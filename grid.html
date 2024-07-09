@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+    
+    <style>
+      
+.section{
+    background-color: #ADDEFC;
+    display:grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    color:white;
+
+}
+.section1{
+    background-color: #8FF5D9;
+    text-align: center;
+    margin:10px;
+    padding:5px;
+}
+.section3{
+    background-color: #8FF5D9;
+    text-align: center;
+    margin:10px;
+    padding:2px;
+}
+.section2{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+.section2__1{
+    background-color: #6EDB6E;
+    margin:10px;
+    padding:2px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.section2__2{
+    background-color: #FBB04E;
+  
+    margin:10px;
+    padding:2px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.text{
+    display:grid;
+    justify-content: center;
+align-items: center;
+}
+.image div{
+   
+    
+
+    display:grid;
+    justify-content: center;
+align-items: center;
+    height:150px;
+    width:150px;
+    background-color: #FDD24B;
+    padding:5px;
+    margin:10px;
+}
+
+</style>
+
+
+    <div class="section">
+        <div class="section1">
+            <h1>Header</h1>
+        </div>
+
+        <div class="section2">
+            <div class="section2__1">
+                <p>Aside</p>
+            </div>
+            <div class="section2__2">
+                <div class="text"><p>Article</p></div>
+                <div class="image">
+                <div>Image</div>
+                <div>Image</div>
+                <div>Image</div>
+            </div>
+            </div>
+        </div>
+
+        <div class="section3">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>
