@@ -13,7 +13,7 @@
 
     <nav class="flex justify-between bg-green-100 p-3 shadow-2xl sticky top:0px">
         <h1 class="text-2xl"> GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6 w-8 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -29,44 +29,64 @@
             </li>
         </ul>
     </nav>
+
+        <!--Side nav bar-->
+<section id="sidenav" class="bg-green-100 z-20 fixed top-0 right-0 transition-all duration-1000" style="width:50%; height:100vh; right:-50%">
+    <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+    <ul class="flex flex-col items-center gap-10 text-gray-700">
+        <li>
+            <a class="hover:underline hover:text-black-800" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black-800" href="product.html">Products</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black-800" href="contact.html">Contact</a>
+        </li>
+    </ul>
+
+</section>
     <!--products-->
 
     <section class="mt-10 text-center">
         <h1 class="font-bold text-4xl text-center">Our Products</h1>
-        <input class="w-3/4 p-2 mt-5 border border-black" placeholder="Search for a Product..">
+        <input id="search" class="w-3/4 p-2 mt-5 border border-black" placeholder="Search for a Product..">
     
 
-    <div class="mt-10 grid grid-cols-2 md:grid-cols-4 p-4 gap-6">
+    <div id="productcontainer" class="mt-10 grid grid-cols-2 md:grid-cols-4 p-4 gap-6">
+        
         <div><img src="./images/best1.png" class="inline transform hover:-translate-y-2 shadow-2xl mt-3">
-            <p>Rose plant</p>
+            <h1>Rose plant</h1>
             <p>$20</p>
         </div>
         <div><img src="./images/best2.png" class="inline transform hover:-translate-y-2 shadow-2xl mt-3">
-            <p>Snake plant</p>
+            <h1>Snake plant</h1>
             <p>$30</p>
         </div>
         <div><img src="./images/best3.png" class="inline transform hover:-translate-y-2 shadow-2xl mt-3">
-            <p>Aloevera plant</p>
+            <h1>Aloevera plant</h1>
             <p>$60</p>
         </div>
         <div><img src="./images/best4.png" class="inline transform hover:-translate-y-2 shadow-2xl mt-3">
-            <p>Lilly plant</p>
+            <h1>Lilly plant</h1>
             <p>$10</p>
         </div>
         <div><img src="./images/best5.png" class="inline transform hover:-translate-y-2 shadow-2xl mt-3">
-            <p>Marriegold Plant</p>
+            <h1>Marriegold Plant</h1>
             <p>$40</p>
         </div>
         <div><img src="./images/best6.png" class="inline transform hover:-translate-y-2 shadow-2xl mt-3">
-            <p>Samanthi Plant</p>
+            <h1>Samanthi Plant</h1>
             <p>$20</p>
         </div>
         <div><img src="./images/best7.png" class="inline transform hover:-translate-y-2 shadow-2xl mt-3">
-            <p>Creeping Plant</p>
+            <h1>Creeping Plant</h1>
             <p>$50</p>
         </div> 
         <div><img src="./images/best8.png" class="inline transform hover:-translate-y-2 shadow-2xl mt-3">
-            <p>Flowering plant</p>
+            <h1>Flowering plant</h1>
             <p>$20</p>
         </div>
     </div>
@@ -78,6 +98,7 @@
     <p class="mt-4">@Greenday.com</p>
 </div>
 </section>
+<script src="product.js"></script>
 </body>
 
 </html>
